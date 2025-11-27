@@ -170,6 +170,7 @@
         font-size: 16px;
         font-weight: 600;
         color: #252e27;
+        text-align: center;
       }
 
       p {
@@ -193,5 +194,26 @@
 
   .swiper-slide .mob {
     display: block;
+  }
+
+  .product-info {
+    bottom: 0; 
+    left: 0;
+    height: 200px !important;
+    position: static !important;
+  }
+
+  .product-item:hover {
+    .product-image,
+    .product-info {
+      transform: none !important;
+      background-color: #fff !important;
+    }
+  }
+
+  .info-2 {
+    .info-item {
+      width:50% !important;
+    }
   }
 }

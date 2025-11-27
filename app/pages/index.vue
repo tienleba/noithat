@@ -58,11 +58,11 @@
           </div>
           <div class="product-info">
             <h5 class="product-name my-2">Sofa hiện đại</h5>
-            <div class="price d-flex align-items-center">
+            <div class="price d-flex align-items-center flex-wrap">
                <p class="product-price">5,000,000 VND</p>
                <p class="original-price">7,000,000 VND</p>
             </div>
-            <div class="vote-sold d-flex justify-content-between align-items-center">
+            <div class="flex-wrap vote-sold d-flex justify-content-between align-items-center">
               <div class="vote">
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -92,11 +92,11 @@
           </div>
           <div class="product-info">
             <h5 class="product-name my-2">Sofa hiện đại</h5>
-            <div class="price d-flex align-items-center">
+            <div class="price d-flex align-items-center flex-wrap">
                <p class="product-price">5,000,000 VND</p>
                <p class="original-price">7,000,000 VND</p>
             </div>
-            <div class="vote-sold d-flex justify-content-between align-items-center">
+            <div class="flex-wrap vote-sold d-flex justify-content-between align-items-center">
               <div class="vote">
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -131,11 +131,11 @@
           </div>
           <div class="product-info">
             <h5 class="product-name my-2">Tủ Quần Áo Ubeda Ngăn Kệ 201 Có Gương Nhiều Kích Thước </h5>
-            <div class="price d-flex align-items-center">
+            <div class="price d-flex align-items-center flex-wrap">
                <p class="product-price">5,000,000 VND</p>
                <p class="original-price">7,000,000 VND</p>
             </div>
-            <div class="vote-sold d-flex justify-content-between align-items-center">
+            <div class="flex-wrap vote-sold d-flex justify-content-between align-items-center">
               <div class="vote">
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -150,7 +150,7 @@
         </a>
       </div>
     </div>
-    <div class="info-2 d-flex justify-content-around my-4">
+    <div class="info-2 d-flex flex-wrap justify-content-around my-4">
       <div class="info-item align-items-center d-flex flex-column">
         <img src="https://theme.hstatic.net/200000065946/1001264503/14/vice_item_1_thumb.png?v=1347" alt="service-1" width="50"/>
         <h5 class="mt-2">Giao hàng và lắp đặt</h5>
