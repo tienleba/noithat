@@ -1,0 +1,112 @@
+$primary-color: #1d4ed8;
+$header-height: 80px;
+$header-height-shrink: 60px;
+$bg-light: rgba(255,255,255,0.95);
+$text-dark: #1f2937;
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  background-color: $bg-light;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 999;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 50px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 24px;
+
+    .nav-item {
+      color: $text-dark;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.3s;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .header-actions {
+    display: flex;
+    gap: 12px;
+  }
+
+  // Hamburger button (mobile)
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: $text-dark;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+  }
+
+  // Mobile styles
+  @media (max-width: 768px) {
+    height: 60px;
+    .nav-menu,
+    .header-actions {
+      display: flex; 
+      flex-direction: column;
+      gap: 12px;
+      background-color: $bg-light;
+      position: absolute;
+      top: $header-height;
+      left: 0;
+      width: 100%;
+      padding: 16px;
+      border-bottom: 1px solid #e5e7eb;
+      transform: translateY(-20px); 
+      opacity: 0;                 
+      pointer-events: none;       
+      transition: all 0.5s ease-in-out; 
+    }
+
+    .logo img {
+      height: 30px;
+    }
+
+    .nav-menu.active,
+    .header-actions.active {
+      transform: translateY(0);    
+      opacity: 1;
+      pointer-events: auto;       
+    }
+
+    .menu-toggle {
+      display: flex;
+    }
+  }
+
+}
