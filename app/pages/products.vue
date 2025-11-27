@@ -80,7 +80,7 @@
 
 <script setup>
   useHead({
-    title: 'Nội thất Moho - Nội thất an toàn, tiện nghi , bảo hành 5 năm',
+    title: 'Sản phẩm - Nội thất Moho',
     meta: [
       { name: 'description', content: 'Oktaku' }
     ]
